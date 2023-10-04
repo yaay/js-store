@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <p>Where in the world?</p>
+        </div>
+        <div class="dark-mode-toggle" onclick="changeTheme()">
+            <div class="light">
+                <span class="material-symbols-outlined">
+                    dark_mode
+                </span>
+                <p>Dark Mode</p>
+            </div>
+            <div class="dark">
+                <span class="material-symbols-outlined">
+                    light_mode
+                </span>
+                <p>Light Mode</p>
+            </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="search-filter-row">
+            <div class="search-bar">
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+                <input class="search-input" onInput="dataFetcher()" type="text" placeholder="Search for a product...">
+            </div>
+            <div class="filter">
+                <button class="filter-btn">Filter by Category</button>
+                <div class="filter-content">
+                </div>
+            </div>
+        </div>
+        <div class="products-container">
+         </div>
+    </div>
+
+</body>
+
+</html>
